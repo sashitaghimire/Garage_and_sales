@@ -9,8 +9,9 @@ import WorkingSteps from "../WorkingSteps/WorkingSteps";
 const Home = () => {
   return (
     <div className="bg-brand-light-border-pink p-6">
+      <Navbar />
+
       <section id="home">
-        <Navbar />
         <Header />
       </section>
       <section id="why_choose_us">
