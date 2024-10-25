@@ -8,7 +8,7 @@ import tiktok from "../assets/icons/tiktok.png";
 const Footer = () => {
   return (
     <footer className=" bg-brand-blue text-white py-6 md:py-10 rounded-md">
-      <div className="container  mx-5 px-2">
+      <div className="container mx-5 px-5">
         <div>
           <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
             Garage and Yard Sale

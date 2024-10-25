@@ -84,7 +84,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Logo"
-              className="w-20 h-20 object-cover rounded-lg mt-2"
+              className="w-20 h-20 object-cover rounded-lg mt-2 ml-14"
             />
           </div>
 
