@@ -30,7 +30,7 @@ const SaleCard = ({ image, title, date, location, color, borderColor }) => (
 
 const SalesItems = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="container flex items-center justify-center min-h-screen">
       <div className="relative">
         <img
           src={iphone_image}

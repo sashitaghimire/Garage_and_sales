@@ -1,11 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const FAQAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-
-  const toggleAccordion = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
 
   const faqItems = [
     {
@@ -27,24 +23,60 @@ const FAQAccordion = () => {
   ];
 
   return (
-    <div className="w-full max-w-2xl mx-auto py-14">
-      <h2 className="text-center text-2xl font-semibold mb-6">
+    <div className="container w-full max-w-2xl mx-auto py-14">
+      <h2 className="text-center text-4xl font-semibold mb-14">
         Frequently asked questions
       </h2>
       {faqItems.map((item, index) => (
-        <div key={index} className="border-b border-gray-200 pb-5">
-          <button
-            onClick={() => toggleAccordion(index)}
-            className="flex justify-between w-full py-4 text-lg font-medium text-left focus:outline-none"
-          >
-            {item.question}
-            <span>{activeIndex === index ? "-" : "+"}</span>
-          </button>
-          {activeIndex === index && (
-            <div className="pb-4 text-gray-700">{item.answer}</div>
-          )}
-        </div>
+        <AccordionItem
+          key={index}
+          item={item}
+          isActive={activeIndex === index}
+          onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+        />
       ))}
+    </div>
+  );
+};
+
+const AccordionItem = ({ item, isActive, onClick }) => {
+  const contentRef = useRef(null);
+
+  return (
+    <div className="border-b border-gray-200 pb-5">
+      <button
+        onClick={onClick}
+        className="flex justify-between w-full py-4 text-basefont-medium text-left focus:outline-none"
+      >
+        {item.question}
+        <span className="transform transition-transform duration-300 ease-in-out">
+          <svg
+            className={`w-5 h-5 transition-transform duration-300 ${
+              isActive ? "rotate-180" : ""
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </span>
+      </button>
+      <div
+        ref={contentRef}
+        className="overflow-hidden transition-all duration-300 ease-in-out"
+        style={{
+          maxHeight: isActive ? contentRef.current?.scrollHeight + "px" : "0",
+        }}
+      >
+        <div className="pb-4 text-gray-700">{item.answer}</div>
+      </div>
     </div>
   );
 };

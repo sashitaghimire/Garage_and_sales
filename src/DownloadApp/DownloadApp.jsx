@@ -4,9 +4,8 @@ import qr_code from "../assets/qr_code.png";
 
 const DownloadApp = () => {
   return (
-    <div className="bg-brand-light-orange p-6 md:p-10 rounded-lg">
-      {/* Main container with responsive flex layout */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-4">
+    <div className=" bg-brand-light-orange p-6 md:p-10 rounded-lg px-4">
+      <div className=" container flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-4">
         {/* Left section with text and store buttons */}
         <div className="text-center md:text-left">
           <h3 className="text-lg sm:text-xl font-bold text-brand-brown mb-2">

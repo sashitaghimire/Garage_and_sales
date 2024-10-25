@@ -14,18 +14,23 @@ const Home = () => {
       <section id="home">
         <Header />
       </section>
+      <div className="mb-14"></div>
       <section id="why_choose_us">
         <GarageAndYardSales />
       </section>
+      <div className="mb-14"></div>
       <section id="how_it_works">
         <WorkingSteps />
       </section>
+      <div className="mb-14"></div>
       <section id="get_the_app">
         <DownloadApp />
       </section>
+      <div className="mb-14"></div>
       <section id="faqs">
         <FAQAccordion />
       </section>
+      <div className="mb-14"></div>
 
       <Footer />
     </div>

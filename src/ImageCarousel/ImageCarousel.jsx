@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import intro1 from "../assets/intro1.png";
-import intro2 from "../assets/intro2.png";
-import intro3 from "../assets/intro3.png";
-import intro4 from "../assets/intro4.png";
-import intro5 from "../assets/intro5.png";
+import intro1 from "../assets/sliders/intro1.png";
+import intro2 from "../assets/sliders/intro2.png";
+import intro3 from "../assets/sliders/intro4.png";
+import intro4 from "../assets/sliders/intro5.png";
+import intro5 from "../assets/sliders/intro6.png";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export default function ImageCarousel() {
   const slides = [
@@ -32,26 +33,38 @@ export default function ImageCarousel() {
   ];
 
   return (
-    <Swiper
-      breakpoints={{
-        640: {
-          slidesPerView: 1.5,
-        },
-        768: {
-          slidesPerView: 3.5,
-        },
-        1024: {
-          slidesPerView: 5,
-        },
-      }}
-      spaceBetween={30}
-      className="mySwiper"
-    >
-      {slides.map((slide, index) => (
-        <SwiperSlide key={index + 1}>
-          <img src={slide.url} alt={slide.title} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="container">
+      <Swiper
+        breakpoints={{
+          640: {
+            slidesPerView: 1.5,
+          },
+          768: {
+            slidesPerView: 3.5,
+          },
+          1024: {
+            slidesPerView: 4.5,
+          },
+        }}
+        spaceBetween={30}
+        className="mySwiper"
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation, Autoplay]}
+        loop={true}
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index + 1}>
+            <img src={slide.url} alt={slide.title} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }

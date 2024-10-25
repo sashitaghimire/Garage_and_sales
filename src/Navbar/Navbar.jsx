@@ -67,8 +67,8 @@ const Navbar = () => {
         ${isMobile ? "block text-base w-full text-left" : "text-sm"}
         ${
           activeSection === item.href
-            ? "text-orange-600"
-            : "hover:text-blue-600"
+            ? "text-[#995524]"
+            : "hover:text-[#995524]"
         }
       `}
     >
@@ -77,7 +77,7 @@ const Navbar = () => {
   );
   return (
     <nav className="fixed w-full bg-brand-light-border-pink top-0 left-0 right-0   z-50 py-4">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
