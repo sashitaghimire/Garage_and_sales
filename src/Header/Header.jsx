@@ -10,7 +10,7 @@ const Header = () => {
           <span className="text-brand-red">Garage </span>
           <span className="text-brand-blue">& </span>
           <span className="text-brand-green">Yard </span>
-          <span className="text-brand-brown">Sale</span>
+          <span className="text-brand-red">Sale</span>
         </h1>
         <h2 className="text-4xl md:text-4xl font-bold mb-4 text-brand-brown">
           Easily, Safely & Quickly.

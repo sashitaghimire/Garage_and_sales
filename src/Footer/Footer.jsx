@@ -4,6 +4,7 @@ import facebook from "../assets/icons/facebook.png";
 import instagram from "../assets/icons/instagram.png";
 import youtube from "../assets/icons/youtube.png";
 import tiktok from "../assets/icons/tiktok.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -71,12 +72,12 @@ const Footer = () => {
               Copyright © 2024 Garage&Yard. All rights reserved
             </p>
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-8">
-              <a href="#" className="hover:underline">
+              <Link to="/privacy-policy" className="hover:underline">
                 Privacy Policy
-              </a>
-              <a href="#" className="hover:underline">
+              </Link>
+              <Link to="/terms-and-conditions" className="hover:underline">
                 Terms and Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>
