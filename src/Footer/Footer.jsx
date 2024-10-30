@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="mx-5 px-5">
           <div>
             <h2 className="text-base md:text-xl font-semibold mb-3 md:mb-4 font-merriweather">
-              Garage and Yard Sale
+              Find Garage and Yard Sale
             </h2>
             <p className="text-base md:text-base mb-6 leading-relaxed font-rethink">
               Garage and Yard Sale App is a user-friendly platform that allows
