@@ -14,7 +14,7 @@ const Step = ({ title, description, icon }) => (
       <h3 className="font-bold text-base mb-1 font-rethink leading-6">
         {title}
       </h3>
-      <p className="text-sm text-gray-600 font-rethink leading-6	">
+      <p className="text-base text-gray-600 font-rethink leading-6	">
         {description}
       </p>
     </div>
