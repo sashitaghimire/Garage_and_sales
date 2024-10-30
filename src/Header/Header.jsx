@@ -6,17 +6,17 @@ const Header = () => {
   return (
     <main className="container mx-auto px-4 py-14">
       <div className="text-center mt-12">
-        <h1 className="text-5xl md:text-5xl font-extrabold mb-2">
+        <div className="text-6xl font-extrabold mb-2">
           <span className="text-brand-brown">Find </span>
           <span className="text-brand-red">Garage </span>
           <span className="text-brand-blue">& </span>
           <span className="text-brand-green">Yard </span>
           <span className="text-brand-red">Sale</span>
-        </h1>
+        </div>
         <h2 className="text-4xl md:text-4xl font-bold mb-4 text-brand-brown">
           Easily, Safely & Quickly.
         </h2>
-        <p className="text-2xl mb-4 font-medium text-brand-brown">
+        <p className="text-xl mb-4 font-bold text-brand-brown">
           Show Your Presence In Your Neighborhood.
         </p>
 

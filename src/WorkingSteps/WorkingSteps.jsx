@@ -7,7 +7,7 @@ import sign_up from "../assets/icons/sign_up.png";
 // Reusable Step Component
 const Step = ({ title, description, icon }) => (
   <div className={`flex flex-col items-center gap-4 lg:gap-6 mb-5`}>
-    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-brand-green rounded-3xl flex items-center justify-center">
+    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-brand-green rounded-3xl flex items-center justify-center">
       <img src={icon} alt={title} />
     </div>
     <div className={`text-center`}>

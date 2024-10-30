@@ -9,10 +9,10 @@ const DownloadApp = () => {
         <div className=" container flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-4">
           {/* Left section with text and store buttons */}
           <div className="text-center md:text-left">
-            <h3 className="text-lg sm:text-xl font-bold text-brand-brown mb-2">
+            <div className="text-4xl md:text-4xl sm:text-xl font-bold text-brand-brown mb-2">
               Download this App Today!
-            </h3>
-            <p className="text-sm text-brand-brown mb-4 font-rethink">
+            </div>
+            <p className="text-xl text-brand-brown mb-4 font-rethink">
               Buy and sell your stuffs Easily, safely and quickly.
             </p>
             {/* Store buttons container */}
@@ -42,7 +42,7 @@ const DownloadApp = () => {
 
           {/* Right section with QR code */}
           <div className="flex flex-col items-center justify-center">
-            <p className="text-xs text-center text-brand-brown mb-2 font-rethink">
+            <p className="text-xl text-center text-brand-brown mb-2 font-rethink">
               Scan Here to{" "}
             </p>
             <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-45 md:h-45">
@@ -53,7 +53,7 @@ const DownloadApp = () => {
               />
             </div>
             <div className="text-center mt-2">
-              <p className="text-xs text-brand-brown mt-1 font-rethink">
+              <p className="text-xl text-brand-brown mt-1 font-rethink">
                 Find or post your garage and yard sale.
               </p>
             </div>
