@@ -1,5 +1,3 @@
-.swiper-container {
-  .swiper-wrapper {
-    transition-timing-function: linear;
-  }
+.swiper-slide {
+  transition: opacity 0.5s ease-in-out;
 }
