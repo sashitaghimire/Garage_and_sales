@@ -10,12 +10,12 @@ import save_money from "../assets/icons/save-money.png";
 // FeatureCard Component
 const FeatureCard = ({ imgSrc, title, description }) => {
   return (
-    <div className="w-full sm:w-2/5 lg:w-1/4 p-3">
+    <div className="w-full sm:w-2/5 lg:w-1/4 p-3 my-2">
       <div className="flex flex-col items-center">
         <div className="w-16 h-16 bg-brand-brown rounded-2xl flex items-center justify-center mb-3">
           <img src={imgSrc} alt={title} />
         </div>
-        <h3 className="font-semibold mb-1 font-rethink text-brand-text-color text-base leading-6	">
+        <h3 className="font-semibold mb-1 font-rethink text-brand-text-color text-base leading-6	text-center">
           {title}
         </h3>
         <p className="text-base text-center max-w-[400px] font-rethink text-brand-light-text-color leading-6	">
