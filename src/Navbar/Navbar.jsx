@@ -12,6 +12,7 @@ const Navbar = () => {
     { href: "how_it_works", label: "How it works" },
     { href: "get_the_app", label: "Get the App" },
     { href: "faqs", label: "FAQs" },
+    { href: "about_us", label: "About us" },
   ];
 
   const scrollToSection = (href) => {

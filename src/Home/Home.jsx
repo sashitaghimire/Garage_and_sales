@@ -32,7 +32,9 @@ const Home = () => {
       </section>
       <div className="mb-11"></div>
 
-      <Footer />
+      <section id="about_us">
+        <Footer />
+      </section>
     </div>
   );
 };

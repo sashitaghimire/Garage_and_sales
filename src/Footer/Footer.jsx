@@ -16,12 +16,16 @@ const Footer = () => {
               Find Garage and Yard Sale
             </h2>
             <p className="text-base md:text-base mb-6 leading-relaxed font-rethink">
-              Garage and Yard Sale App is a user-friendly platform that allows
-              you to easily buy and sell items from local garage and yard sales
-              in your community. With simple sign-up, seamless navigation, and
-              secure transactions, you can find great deals nearby or post your
-              own sales to reach buyers. Sell your items fast and hassle-free,
-              all while connecting with your neighbors!
+              Find Garage and Yard Sale is your easy-to-use platform for buying
+              and selling items from local garage and yard sales right in your
+              community. With quick sign-up, smooth navigation, and secure
+              transactions, you can effortlessly find amazing deals or post your
+              own sale to attract buyers nearby. Keep your neighborhood clean
+              with organized sales that reduce clutter, and turn your unwanted
+              items into treasures for others. Make an eco-friendly impact by
+              giving your items a second life, while earning cash with ease.
+              Sell fast, buy easily, and connect with your neighbors—all in one
+              place!
             </p>
 
             {/* App Store Buttons */}
