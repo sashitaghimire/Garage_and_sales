@@ -1,6 +1,11 @@
 import box from "../assets/icons/box.png";
 import compass from "../assets/icons/compass.png";
 import rocket from "../assets/icons/rocket.png";
+import security from "../assets/icons/security.png";
+import connection from "../assets/icons/connection.png";
+import eco from "../assets/icons/eco.png";
+import clean from "../assets/icons/clean.png";
+import save_money from "../assets/icons/save-money.png";
 
 // FeatureCard Component
 const FeatureCard = ({ imgSrc, title, description }) => {
@@ -13,7 +18,7 @@ const FeatureCard = ({ imgSrc, title, description }) => {
         <h3 className="font-semibold mb-1 font-rethink text-brand-text-color text-base leading-6	">
           {title}
         </h3>
-        <p className="text-base text-center max-w-[250px] font-rethink text-brand-light-text-color leading-6	">
+        <p className="text-base text-center max-w-[400px] font-rethink text-brand-light-text-color leading-6	">
           {description}
         </p>
       </div>
@@ -25,21 +30,73 @@ const GarageAndYardSales = () => {
   const features = [
     {
       imgSrc: box,
-      title: "1. Sell Easily",
+      title: "1. Sell Easily, Earn Easily",
       description:
-        "Post your garage or yard sale with images, details, and dates.",
-    },
-    {
-      imgSrc: compass,
-      title: "2. Find Nearby Sales",
-      description:
-        "Search for sales happening around your neighborhood using a map or list view.",
+        "Post your garage or yard sale with images, details, and dates. Clear out unwanted items while making extra money on the spot.",
     },
     {
       imgSrc: rocket,
-      title: "3. Safe and Secure",
+      title: "2. Good way to make a Treasure ",
+      description: (
+        <>
+          A garage or yard sale turns your unwanted items into valuable finds
+          for others, making them "treasures" instead of "trash."
+        </>
+      ),
+    },
+    {
+      imgSrc: compass,
+      title: "3. Find Nearby Sales",
       description:
-        "Contact sellers or buyers within the app for a safe transaction.",
+        "Search for sales happening around your neighborhood using a map or list view.",
+    },
+
+    {
+      imgSrc: security,
+      title: "4. Safe and Secure",
+      description: (
+        <>Contact sellers or buyers within the app for a safe transaction.</>
+      ),
+    },
+    {
+      imgSrc: eco,
+      title: "5. Eco Friendly",
+      description: (
+        <>
+          Reduce waste by giving your items a second life and promoting reuse
+          within the community.
+        </>
+      ),
+    },
+    {
+      imgSrc: save_money,
+      title: "6. No Extra Costs  ",
+      description: (
+        <>
+          Avoid shipping fees or platform charges or placard costs—everything is
+          sold in person, saving you and the buyer money.
+        </>
+      ),
+    },
+    {
+      imgSrc: connection,
+      title: "7. Community Connection  ",
+      description: (
+        <>
+          Set your own prices, hours, and enjoy a hassle-free selling experience
+          right from your home.
+        </>
+      ),
+    },
+    {
+      imgSrc: clean,
+      title: "8. Keep your Neighborhood Clean",
+      description: (
+        <>
+          Host a garage sale! Clear out clutter without crowding the streets and
+          turn your space into a treasure trove for local shoppers.
+        </>
+      ),
     },
   ];
 
