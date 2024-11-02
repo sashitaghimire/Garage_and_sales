@@ -30,14 +30,22 @@ const Footer = () => {
 
             {/* App Store Buttons */}
             <div className="flex flex-col sm:flex-row mb-6 space-y-3 sm:space-y-0 sm:space-x-4">
-              <a href="#!" className="inline-block w-36 sm:w-auto">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.sale.garageyard&hl=en_US&gl=US"
+                className="inline-block w-36 sm:w-auto"
+                target="_blank"
+              >
                 <img
                   src={play_store}
                   alt="Google Play"
                   className="h-10 w-auto object-contain"
                 />
               </a>
-              <a href="#!" className="inline-block w-36 sm:w-auto">
+              <a
+                href="https://apps.apple.com/us/app/garageyard/6737464722"
+                className="inline-block w-36 sm:w-auto"
+                target="_blank"
+              >
                 <img
                   src={app_store}
                   alt="App Store"

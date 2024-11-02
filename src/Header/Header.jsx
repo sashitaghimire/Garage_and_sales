@@ -28,14 +28,22 @@ const Header = () => {
           Download our app:
         </p>
         <div className="flex justify-center space-x-4">
-          <a href="#" className="inline-block">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.sale.garageyard&hl=en_US&gl=US"
+            className="inline-block"
+            target="_blank"
+          >
             <img
               src={play_store}
               alt="Get it on Google Play"
               className="h-12"
             />
           </a>
-          <a href="#" className="inline-block">
+          <a
+            href="https://apps.apple.com/us/app/garageyard/6737464722"
+            className="inline-block"
+            target="_blank"
+          >
             <img
               src={app_store}
               alt="Download on the App Store"

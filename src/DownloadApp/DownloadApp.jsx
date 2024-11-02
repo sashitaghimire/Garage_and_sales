@@ -18,8 +18,9 @@ const DownloadApp = () => {
             {/* Store buttons container */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-4">
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.sale.garageyard&hl=en_US&gl=US"
                 className="transform hover:scale-105 transition-transform"
+                target="_blank"
               >
                 <img
                   src={play_store}
@@ -28,8 +29,9 @@ const DownloadApp = () => {
                 />
               </a>
               <a
-                href="#"
+                href="https://apps.apple.com/us/app/garageyard/6737464722"
                 className="transform hover:scale-105 transition-transform"
+                target="_blank"
               >
                 <img
                   src={app_store}
