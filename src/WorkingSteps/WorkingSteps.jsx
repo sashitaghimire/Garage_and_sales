@@ -26,26 +26,26 @@ const WorkingSteps = () => {
     {
       title: "2. Seamless Navigation",
       description:
-        "Effortlessly search, filter, and explore products within your area.",
+        "Explore and filter local sales with our easy-to-use search features.",
       icon: navigation,
     },
     {
       title: "4. Complete the Sale",
       description:
-        "Sell your items quickly and securely, and watch your sale go live for a full week.",
+        "List your items securely and watch your sale go live for a full week.",
       icon: box,
     },
   ];
   const stepsDataLeft = [
     {
       title: "1. Sign Up Easily",
-      description: "Create an account with your Email and a secure password.",
+      description: "Create an account with your email and a secure password.",
       icon: sign_up,
     },
     {
-      title: "3. Find Sales or Post Your Own",
+      title: "3.  Find Sales or Post Your Own",
       description:
-        "Browse nearby garage and yard sales, or list your items for sale with just a few taps.",
+        "Browse neighborhood garage and yard sales, or list your items for sale with a few taps.",
       icon: search,
     },
   ];

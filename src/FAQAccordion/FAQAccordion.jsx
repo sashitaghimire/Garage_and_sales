@@ -20,8 +20,8 @@ const FAQAccordion = () => {
             <li className="flex flex-col gap-2">
               <h3 className="font-bold text-lg">2. Enter Sale Details</h3>
               <p className="text-gray-600">
-                Add your sale date, time, and address to make it easy for
-                shoppers to find you.
+                Input your sale date, time, and address for easy buyer access
+                and enhanced shopping experience.
               </p>
             </li>
 
@@ -30,39 +30,44 @@ const FAQAccordion = () => {
                 3. Create an Eye-Catching Title
               </h3>
               <p>
-                Use a title like "Huge Garage Sale—Furniture, Toys, Electronics
-                & More!" to grab attention.
+                Use a compelling title like "Huge Garage Sale—Furniture, Toys,
+                Electronics & More!" to grab the viewer’s attention.
               </p>
             </li>
 
             <li className="flex flex-col gap-2">
               <h3 className="font-bold text-lg">4. Add Photos</h3>
               <p>
-                Upload clear photos of your top items to attract more buyers.
+                Upload clear images of your top items to attract more potential
+                buyers.
               </p>
             </li>
 
             <li className="flex flex-col gap-2">
-              <h3 className="font-bold text-lg">5. List Key Items</h3>
+              <h3 className="font-bold text-lg">5. List Featured Items</h3>
               <p>
-                Mention popular items like "Books, Tools, Clothing, Kitchenware"
-                to let shoppers know what to expect.
+                Highlight popular categories like "Books, Tools, Clothing,
+                Kitchenware" so that shoppers know what to expect.
               </p>
             </li>
 
             <li className="flex flex-col gap-2">
               <h3 className="font-bold text-lg">6. Post & Share</h3>
               <p>
-                Once you're happy with your post, hit "Publish" and share it
-                with friends and neighbors to spread the word.
+                Hit “Publish” once you're happy with your post. You can go a
+                step further by sharing with your friends and neighbors to
+                maximize visibility.
+                <br />
+                Turn your unused items into cash with a successful garage and
+                yard sale TODAY!
               </p>
             </li>
           </ol>
 
-          <p className="mt-2 font-medium">
+          {/* <p className="mt-2 font-medium">
             Get ready for a successful garage and yard sale and turn your unused
             items into cash!
-          </p>
+          </p> */}
         </>
       ),
     },
@@ -85,27 +90,21 @@ const FAQAccordion = () => {
                 2. Enable Location Services{" "}
               </h3>
               <p className="text-gray-600">
-                Allow location access so we can show sales closest to you.
+                Grant the app location access to view nearby sales.
               </p>
             </li>
 
             <li className="flex flex-col gap-2">
-              <h3 className="font-bold text-base">
-                3. Browse the Map or List{" "}
-              </h3>
+              <h3 className="font-bold text-base">3. View Sales</h3>
               <p className="text-gray-600">
-                Use the map view to see nearby sales or scroll through the list
-                for details.
+                Choose between map or list view to see details on local sales.
               </p>
             </li>
 
             <li className="flex flex-col gap-2">
-              <h3 className="font-bold text-base">
-                {" "}
-                4. Filter by Date & Category
-              </h3>
+              <h3 className="font-bold text-base"> 4. Apply Filters</h3>
               <p className="text-gray-600">
-                Narrow down results by sale date or item types like “furniture,”
+                Refine your search by sale date or category like “furniture,”
                 “electronics,” or “kids’ toys” to find exactly what you’re
                 looking for.
               </p>
@@ -114,14 +113,14 @@ const FAQAccordion = () => {
             <li className="flex flex-col gap-2">
               <h3 className="font-bold text-base">5. Save & Get Directions</h3>
               <p className="text-gray-600">
-                Tap on any sale to save it to your list and get directions for
-                easy navigation.
+                Save interesting sales to save it to your list by tapping on it,
+                and get directions for easy navigation.
               </p>
             </li>
           </ol>
           <p className="mt-2">
-            Ready to explore? Start finding the best deals around you with
-            Garage and Yard Sale!
+            Ready to explore? Start discovering the best deals in your
+            neighborhood with Garage and Yard Sale!
           </p>
         </>
       ),
@@ -129,12 +128,12 @@ const FAQAccordion = () => {
     {
       question: "Is it free to use the app?",
       answer:
-        "Yes! Garage and Yard Sale is completely free to explore. You can browse and save garage and yard sales near you without any costs or hidden fees. Whether you're looking to find great deals or post your own sale, enjoy full access to all our features for free! Hence, it is costing 10$ to posting a sale for 3 days.",
+        "Yes! The Garage and Yard Sale app is free to browse and explore. Users can search and save local garage and yard sales without any hidden fees. While browsing is free, posting a sale requires a 10$ fee for a 3-day listing period.",
     },
     {
       question: "What is the cost to post a sale?",
       answer:
-        "Posting a sale on Garage and Yard Sale is minimal cost as 10$. Share your garage and yard sale details, add photos, and reach local shoppers without any other hassle and printing charges. Enjoy easy, cost-free posting to help make your sale a success!",
+        "Posting a 3-day sale on Garage and Yard Sale costs 10$. This covers photo uploads, detailed sales listing, and local buyer reach, without the additional hassle of printing or advertising. Allow us to help make your sale a success!",
     },
   ];
 

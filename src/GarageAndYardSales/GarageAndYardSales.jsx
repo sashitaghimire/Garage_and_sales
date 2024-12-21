@@ -30,17 +30,17 @@ const GarageAndYardSales = () => {
   const features = [
     {
       imgSrc: box,
-      title: "1. Sell Easily, Earn Easily",
+      title: "1. Sell Smartly, Earn Instantly",
       description:
-        "Post your garage or yard sale with images, details, and dates. Clear out unwanted items while making extra money on the spot.",
+        "Post your garage or yard sale with photos, image descriptions, and preferred dates. Transform your unwanted items into immediate cash.",
     },
     {
       imgSrc: rocket,
-      title: "2. Good way to make a Treasure ",
+      title: "2. Excellent way to find your Treasure ",
       description: (
         <>
-          A garage or yard sale turns your unwanted items into valuable finds
-          for others, making them "treasures" instead of "trash."
+          With our garage and yard sales, you get to turn items otherwise
+          trashed by others into valuable "treasures."
         </>
       ),
     },
@@ -48,53 +48,58 @@ const GarageAndYardSales = () => {
       imgSrc: compass,
       title: "3. Find Nearby Sales",
       description:
-        "Search for sales happening around your neighborhood using a map or list view.",
+        "Search for sales going on around your neighborhood through our convenient list views and maps.",
     },
 
     {
       imgSrc: security,
-      title: "4. Safe and Secure",
+      title: "4. Safe and Secure Platform",
       description: (
-        <>Contact sellers or buyers within the app for a safe transaction.</>
+        <>
+          Securely connect with sellers or buyers through our in-app messaging
+          system for safe transactions.
+        </>
       ),
     },
     {
       imgSrc: eco,
-      title: "5. Eco Friendly",
+      title: "5. The Eco-Friendly Choice",
       description: (
         <>
-          Reduce waste by giving your items a second life and promoting reuse
-          within the community.
+          Support sustainability by giving your items a second life and
+          promoting reuse within your community.
         </>
       ),
     },
     {
       imgSrc: save_money,
-      title: "6. No Extra Costs  ",
+      title: "6. Zero Hidden Costs ",
       description: (
         <>
-          Avoid shipping fees or platform charges or placard costs—everything is
-          sold in person, saving you and the buyer money.
+          Skip shipping fees, platform charges, or placard expenses–all
+          transactions are conducted in person. Massive savings are guaranteed
+          for everyone.
         </>
       ),
     },
     {
       imgSrc: connection,
-      title: "7. Community Connection  ",
+      title: "7. Community Connection ",
       description: (
         <>
-          Set your own prices, hours, and enjoy a hassle-free selling experience
-          right from your home.
+          Establish your terms – from pricing to timing and enjoy a hassle-free
+          selling experience right from the comfort of your home.
         </>
       ),
     },
     {
       imgSrc: clean,
-      title: "8. Keep your Neighborhood Clean",
+      title: "8. Keep your Community Clean ",
       description: (
         <>
-          Host a garage sale! Clear out clutter without crowding the streets and
-          turn your space into a treasure trove for local shoppers.
+          With a well-organized garage sale, you declutter your space without
+          having to put up street signs, creating a welcoming treasure trove for
+          local shoppers.
         </>
       ),
     },

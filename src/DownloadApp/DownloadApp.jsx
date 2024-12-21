@@ -13,7 +13,7 @@ const DownloadApp = () => {
               Download this App Today!
             </div>
             <p className="text-xl text-brand-brown mb-4 font-rethink">
-              Buy and sell your stuffs Easily, safely and quickly.
+              Buy and sell your items Easily, Safely, and Quickly.
             </p>
             {/* Store buttons container */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-4">

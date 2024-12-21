@@ -14,10 +14,10 @@ const Header = () => {
           <span className="text-brand-red">Sale</span>
         </div>
         <h2 className="text-4xl md:text-4xl font-bold mb-4 text-brand-brown">
-          Easily, Safely & Quickly.
+          Simple, Secure & Fast.
         </h2>
         <p className="text-xl mb-4 font-bold text-brand-brown">
-          Show Your Presence In Your Neighborhood.
+          Connect with Sellers and Buyers In Your Neighborhood
         </p>
 
         <div className="my-12">
