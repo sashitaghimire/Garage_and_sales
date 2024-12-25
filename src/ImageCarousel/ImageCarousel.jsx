@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import intro1 from "../assets/sliders/intro1.png";
-import intro2 from "../assets/sliders/intro2.png";
-import intro3 from "../assets/sliders/intro4.png";
-import intro4 from "../assets/sliders/intro5.png";
-import intro5 from "../assets/sliders/intro6.png";
+import intro1 from "../assets/sliders/1.jpg";
+import intro2 from "../assets/sliders/2.jpg";
+import intro3 from "../assets/sliders/3.jpg";
+import intro4 from "../assets/sliders/4.jpg";
+import intro5 from "../assets/sliders/5.jpg";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export default function ImageCarousel() {
