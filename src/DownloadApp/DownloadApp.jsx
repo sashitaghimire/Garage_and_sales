@@ -1,7 +1,6 @@
 import play_store from "../assets/play_store.png";
 import app_store from "../assets/app_store.png";
 import qr_code from "../assets/qr_code.png";
-import find_garage from "../assets/find_garage.mp4";
 
 const DownloadApp = () => {
   return (
@@ -42,16 +41,16 @@ const DownloadApp = () => {
               </a>
             </div>
           </div>
-          <video
-            controls
-            autoPlay
-            style={{
-              borderRadius: "10px",
-              marginTop: "20px",
-            }}
-          >
-            <source src={find_garage} type="video/mp4" />
-          </video>
+          <iframe
+            title="garage and yard sales"
+            src="https://player.vimeo.com/video/1042070258?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="640"
+            height="360"
+            style={{ borderRadius: "10px", margin: "20px 0px " }}
+            // frameBorder="0"
+            allow="autoplay;"
+            // allowfullscreen
+          />
 
           {/* Right section with QR code */}
           <div className="flex flex-col items-center justify-center">
