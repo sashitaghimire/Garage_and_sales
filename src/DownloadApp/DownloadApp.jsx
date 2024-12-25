@@ -47,7 +47,7 @@ const DownloadApp = () => {
             width="640"
             height="360"
             style={{ borderRadius: "10px", margin: "20px 0px " }}
-            // frameBorder="0"
+            frameBorder="0"
             allow="autoplay;"
             // allowfullscreen
           />
