@@ -2,6 +2,29 @@ import play_store from "../assets/play_store.png";
 import app_store from "../assets/app_store.png";
 import qr_code from "../assets/qr_code.png";
 
+const containerStyle = {
+  maxWidth: "48rem",
+  margin: "1rem auto",
+  width: "100%",
+};
+
+const wrapperStyle = {
+  position: "relative",
+  paddingBottom: "56.25%", // 16:9 Aspect Ratio
+  height: 0,
+  overflow: "hidden",
+};
+
+const iframeStyle = {
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  borderRadius: "0.375rem",
+  border: "none",
+};
+
 const DownloadApp = () => {
   return (
     <div className="container mx-auto">
@@ -41,17 +64,16 @@ const DownloadApp = () => {
               </a>
             </div>
           </div>
-          <iframe
-            title="garage and yard sales"
-            src="https://player.vimeo.com/video/1042070258?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            width="640"
-            height="360"
-            style={{ borderRadius: "10px", margin: "20px 0px " }}
-            frameBorder="0"
-            allow="autoplay;"
-            // allowfullscreen
-          />
-
+          <div style={containerStyle}>
+            <div style={wrapperStyle}>
+              <iframe
+                title="garage and yard sales"
+                src="https://player.vimeo.com/video/1042070258?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                style={iframeStyle}
+                allow="autoplay"
+              />
+            </div>
+          </div>
           {/* Right section with QR code */}
           <div className="flex flex-col items-center justify-center">
             <p className="text-xl text-center text-brand-brown mb-2 font-rethink">
