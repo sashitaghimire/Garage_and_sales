@@ -68,7 +68,7 @@ const DownloadApp = () => {
             <div style={wrapperStyle}>
               <iframe
                 title="garage and yard sales"
-                src="https://player.vimeo.com/video/1042070258?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/1042070258?dnt=1&title=0&byline=0&portrait=0&sidedock=0&color=ffffff"
                 style={iframeStyle}
                 allow="autoplay"
               />
