@@ -2,7 +2,7 @@ import play_store from "../assets/play_store.png";
 import app_store from "../assets/app_store.png";
 import facebook from "../assets/icons/facebook.png";
 import instagram from "../assets/icons/instagram.png";
-import youtube from "../assets/icons/youtube.png";
+import twitter from "../assets/icons/twitter.png";
 import linkedin from "../assets/icons/linkedin.png";
 import { Link } from "react-router-dom";
 
@@ -60,16 +60,33 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex flex-wrap gap-4 mb-6 font-rethink">
               {[
-                { icon: facebook, name: "Facebook" },
-                { icon: instagram, name: "Instagram" },
-                { icon: youtube, name: "YouTube" },
-                { icon: linkedin, name: "Linkedin" },
+                {
+                  icon: facebook,
+                  name: "Facebook",
+                  href: "https://www.facebook.com/profile.php?id=61570867119849",
+                },
+                {
+                  icon: instagram,
+                  name: "Instagram",
+                  href: " https://www.instagram.com/garageyardsale/",
+                },
+                {
+                  icon: twitter,
+                  name: "Twitter",
+                  href: "https://x.com/findgarageyard",
+                },
+                {
+                  icon: linkedin,
+                  name: "Linkedin",
+                  href: "https://www.linkedin.com/in/find-garage-and-yard-sale-179635343/",
+                },
               ].map((social) => (
                 <a
                   key={social.name}
-                  href="#"
+                  href={social.href}
                   className="hover:opacity-75 transition-opacity"
                   aria-label={social.name}
+                  target="_blank"
                 >
                   <img
                     src={social.icon}
