@@ -102,7 +102,8 @@ const Footer = () => {
           <div className="border-t border-gray-500 mt-6 md:mt-8 pt-6 text-xs md:text-sm">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-base text-center md:text-left font-rethink">
-                Copyright © 2024 Garage&Yard. All rights reserved
+                Copyright © {new Date()?.getFullYear()} Garage&Yard. All rights
+                reserved
               </p>
               <div className=" text-base flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-8 font-rethink">
                 <Link to="/privacy-policy" className="hover:underline ">
