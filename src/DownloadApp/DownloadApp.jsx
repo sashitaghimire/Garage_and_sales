@@ -1,6 +1,6 @@
 import play_store from "../assets/play_store.png";
 import app_store from "../assets/app_store.png";
-import qr_code from "../assets/qr_code.png";
+import qr_code from "../assets/qr_code.jpg";
 
 const containerStyle = {
   maxWidth: "48rem",
