@@ -1,6 +1,7 @@
 import play_store from "../../src/assets/play_store.png";
 import app_store from "../../src/assets/app_store.png";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import { APP_STORE_URL, PLAY_STORE_URL } from "../common/constants";
 
 const Header = () => {
   return (
@@ -28,11 +29,7 @@ const Header = () => {
           Download our app:
         </p>
         <div className="flex justify-center space-x-4">
-          <a
-            href="https://play.google.com/store/apps/details?id=com.sale.garageyard&hl=en_US&gl=US"
-            className="inline-block"
-            target="_blank"
-          >
+          <a href={PLAY_STORE_URL} target="_blank">
             <img
               src={play_store}
               alt="Get it on Google Play"
@@ -40,11 +37,7 @@ const Header = () => {
             />
           </a>
 
-          <a
-            href="https://apps.apple.com/us/app/garageyard/6737464722"
-            className="inline-block"
-            target="_blank"
-          >
+          <a href={APP_STORE_URL} className="inline-block" target="_blank">
             <img
               src={app_store}
               alt="Download on the App Store"

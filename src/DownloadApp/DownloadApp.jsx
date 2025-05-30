@@ -1,6 +1,7 @@
 import play_store from "../assets/play_store.png";
 import app_store from "../assets/app_store.png";
 import qr_code from "../assets/qr_code.jpg";
+import { APP_STORE_URL, PLAY_STORE_URL } from "../common/constants";
 
 const containerStyle = {
   maxWidth: "48rem",
@@ -41,7 +42,7 @@ const DownloadApp = () => {
             {/* Store buttons container */}
             <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center gap-4 sm:gap-4">
               <a
-                href="https://play.google.com/store/apps/details?id=com.sale.garageyard&hl=en_US&gl=US"
+                href={PLAY_STORE_URL}
                 className="transform hover:scale-105 transition-transform"
                 target="_blank"
               >
@@ -52,7 +53,7 @@ const DownloadApp = () => {
                 />
               </a>
               <a
-                href="https://apps.apple.com/us/app/garageyard/6737464722"
+                href={APP_STORE_URL}
                 className="transform hover:scale-105 transition-transform"
                 target="_blank"
               >

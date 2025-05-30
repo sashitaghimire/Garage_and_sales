@@ -5,6 +5,7 @@ import instagram from "../assets/icons/instagram.png";
 import twitter from "../assets/icons/twitter.png";
 import linkedin from "../assets/icons/linkedin.png";
 import { Link } from "react-router-dom";
+import { APP_STORE_URL, PLAY_STORE_URL } from "../common/constants";
 
 const Footer = () => {
   return (
@@ -34,7 +35,7 @@ const Footer = () => {
             {/* App Store Buttons */}
             <div className="flex flex-col sm:flex-row mb-6 space-y-3 sm:space-y-0 sm:space-x-4">
               <a
-                href="https://play.google.com/store/apps/details?id=com.sale.garageyard&hl=en_US&gl=US"
+                href={PLAY_STORE_URL}
                 className="inline-block w-36 sm:w-auto"
                 target="_blank"
               >
@@ -45,7 +46,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://apps.apple.com/us/app/garageyard/6737464722"
+                href={APP_STORE_URL}
                 className="inline-block w-36 sm:w-auto"
                 target="_blank"
               >
