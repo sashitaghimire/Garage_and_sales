@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import intro1 from "../assets/sliders/slider_1.jpg";
 import intro2 from "../assets/sliders/slider_2.jpg";
 import intro3 from "../assets/sliders/slider_3.jpg";
-// import intro4 from "../assets/sliders/4.jpg";
+// import intro4 from "../assets/sliders/slider_4.png";
 // import intro5 from "../assets/sliders/5.jpg";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
@@ -25,11 +25,11 @@ export default function ImageCarousel() {
     <div className="container">
       <Swiper
         breakpoints={{
-          640: { slidesPerView: 3},
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 3},
+          640: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
-        spaceBetween={50}
+        spaceBetween={70}
         className="swiper-container"
         pagination={{ clickable: true }}
         autoplay={{
@@ -41,6 +41,7 @@ export default function ImageCarousel() {
         modules={[Pagination, Navigation, Autoplay]}
         loop={true}
         grabCursor={true}
+        style={{ width: "75%" }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -48,7 +49,7 @@ export default function ImageCarousel() {
               src={slide.url}
               alt={slide.title}
               className="w-full rounded-[16px]"
-              />
+            />
           </SwiperSlide>
         ))}
       </Swiper>
