@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import intro1 from "../assets/sliders/1.jpg";
-import intro2 from "../assets/sliders/2.jpg";
-import intro3 from "../assets/sliders/3.jpg";
-import intro4 from "../assets/sliders/4.jpg";
-import intro5 from "../assets/sliders/5.jpg";
+import intro1 from "../assets/sliders/slider_1.jpg";
+import intro2 from "../assets/sliders/slider_2.jpg";
+import intro3 from "../assets/sliders/slider_3.jpg";
+// import intro4 from "../assets/sliders/4.jpg";
+// import intro5 from "../assets/sliders/5.jpg";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export default function ImageCarousel() {
@@ -13,9 +13,6 @@ export default function ImageCarousel() {
     { url: intro1, title: "Mobile Screen 1" },
     { url: intro2, title: "Mobile Screen 2" },
     { url: intro3, title: "Mobile Screen 3" },
-    { url: intro4, title: "Mobile Screen 4" },
-    { url: intro5, title: "Mobile Screen 5" },
-    { url: intro2, title: "Mobile Screen 2" },
   ];
 
   // Preload images to reduce blinking
@@ -28,11 +25,11 @@ export default function ImageCarousel() {
     <div className="container">
       <Swiper
         breakpoints={{
-          640: { slidesPerView: 1.5 },
-          768: { slidesPerView: 3.5 },
-          1024: { slidesPerView: 5 },
+          640: { slidesPerView: 3},
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 3},
         }}
-        spaceBetween={30}
+        spaceBetween={50}
         className="swiper-container"
         pagination={{ clickable: true }}
         autoplay={{
@@ -47,7 +44,11 @@ export default function ImageCarousel() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <img src={slide.url} alt={slide.title} className="w-full" />
+            <img
+              src={slide.url}
+              alt={slide.title}
+              className="w-full rounded-[16px]"
+              />
           </SwiperSlide>
         ))}
       </Swiper>
